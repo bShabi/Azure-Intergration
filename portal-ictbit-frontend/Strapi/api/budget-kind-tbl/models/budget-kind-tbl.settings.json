@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "budget_kind_tbls",
+  "info": {
+    "name": "BudgetKind_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BudgetKindName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

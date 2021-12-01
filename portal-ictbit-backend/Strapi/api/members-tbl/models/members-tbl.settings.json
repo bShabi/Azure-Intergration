@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "members_tbls",
+  "info": {
+    "name": "MEMBERS_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "DateCreateMember": {
+      "type": "date",
+      "unique": false
+    },
+    "LastLoginDate": {
+      "type": "datetime"
+    },
+    "serialNumer": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "private": true
+    },
+    "GUID": {
+      "type": "uid",
+      "targetField": "serialNumer",
+      "required": true
+    },
+    "MemberStatus": {
+      "type": "string",
+      "default": "active"
+    },
+    "MemberFullName": {
+      "type": "string"
+    },
+    "MemberPhoneNumber": {
+      "type": "biginteger",
+      "default": "05"
+    },
+    "MemberEmail": {
+      "type": "email"
+    },
+    "member_org_id": {
+      "model": "organization-tbl"
+    },
+    "ccfoid": {
+      "model": "ccfo-tbl"
+    },
+    "MemberPermisionAzure": {
+      "type": "string"
+    },
+    "LoginUserName": {
+      "type": "string"
+    },
+    "LoginUserNameInAZURE": {
+      "type": "string"
+    },
+    "MemberRequestApproved": {
+      "type": "integer"
+    },
+    "MemberRequestUNApproved": {
+      "type": "integer"
+    },
+    "MemberRequestsLogedInAZURE": {
+      "type": "integer"
+    },
+    "requests_tbls": {
+      "via": "memberID",
+      "collection": "requests-tbl"
+    }
+  }
+}

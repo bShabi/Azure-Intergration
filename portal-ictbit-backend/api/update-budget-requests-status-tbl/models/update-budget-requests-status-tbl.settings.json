@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests_status_tbls",
+  "info": {
+    "name": "RequestsStatus_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "RequestsStatusName": {
+      "type": "string",
+      "required": true
+    },
+    "members_tbl": {
+      "via": "update_budget_requests_status_tbls",
+      "model": "members-tbl"
+    }
+  }
+}

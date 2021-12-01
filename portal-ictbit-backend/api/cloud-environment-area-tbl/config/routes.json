@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cloud-environment-area-tbls",
+      "handler": "cloud-environment-area-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-environment-area-tbls/count",
+      "handler": "cloud-environment-area-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-environment-area-tbls/:id",
+      "handler": "cloud-environment-area-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cloud-environment-area-tbls",
+      "handler": "cloud-environment-area-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cloud-environment-area-tbls/:id",
+      "handler": "cloud-environment-area-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cloud-environment-area-tbls/:id",
+      "handler": "cloud-environment-area-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

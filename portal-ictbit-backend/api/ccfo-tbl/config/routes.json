@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/ccfo-tbls",
+      "handler": "ccfo-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ccfo-tbls/count",
+      "handler": "ccfo-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/ccfo-tbls/:id",
+      "handler": "ccfo-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/ccfo-tbls",
+      "handler": "ccfo-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/ccfo-tbls/:id",
+      "handler": "ccfo-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/ccfo-tbls/:id",
+      "handler": "ccfo-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

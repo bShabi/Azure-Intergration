@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests_tbls",
+  "info": {
+    "name": "Requests_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "memberID": {
+      "model": "members-tbl",
+      "via": "requests_tbls"
+    },
+    "DateCreateRequest": {
+      "type": "datetime"
+    },
+    "LastDateUpdateRequest": {
+      "type": "datetime"
+    },
+    "StatusRequest": {
+      "type": "string"
+    },
+    "CCFOID": {
+      "collection": "ccfo-tbl",
+      "via": "requests_tbl"
+    },
+    "DateCCFORequestNotes": {
+      "type": "datetime"
+    },
+    "LastDateLoginToCloudProvider": {
+      "type": "datetime"
+    },
+    "cloud_name": {
+      "model": "cloud-providers-tbl"
+    },
+    "ProjectNameinCloud": {
+      "type": "string"
+    },
+    "PermisionNameOfCloudProvider": {
+      "type": "string"
+    },
+    "cloud_environment_area_name": {
+      "model": "cloud-environment-area-tbl"
+    },
+    "scheduling": {
+      "model": "scheduling-tbl"
+    },
+    "ReasonOfUnUseofScheduling": {
+      "type": "richtext"
+    },
+    "BudgetOnDemand": {
+      "type": "decimal"
+    },
+    "BudgetReasonNotes": {
+      "type": "richtext"
+    },
+    "DateTimePredictionOfProject": {
+      "type": "string"
+    },
+    "RequestID": {
+      "type": "integer",
+      "unique": true
+    },
+    "update_budget_requests_tbls": {
+      "collection": "update-budget-requests-tbl",
+      "via": "requests_tbl"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "log_tbls",
+  "info": {
+    "name": "LOG_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MemberID": {
+      "type": "biginteger",
+      "required": true
+    },
+    "DateTimeAction": {
+      "type": "datetime"
+    },
+    "ActionContext": {
+      "type": "string"
+    }
+  }
+}

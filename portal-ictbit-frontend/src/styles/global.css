@@ -1,0 +1,37 @@
+body {
+  direction: rtl;
+}
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+/* #MainWrapper {
+  margin-right: 230px;
+}
+
+.MainWrapper {
+  margin-right: 430px;
+} */
+
+.css-1o2e8si-MuiList-root.MuiList-root
+  .MuiListItem-root
+  .MuiButton-root
+  .MuiButton-startIcon
+  .MuiSvgIcon-root,
+.css-1o2e8si-MuiList-root.MuiList-root
+  .MuiListItem-root
+  .MuiButton-root
+  .MuiButton-endIcon
+  .MuiSvgIcon-root {
+  margin-right: 0 10px;
+}
+.css-327y6d {
+  width: 235px !important;
+}
+.css-g0mmwb-MuiButtonBase-root-MuiTab-root.Mui-selected
+  .css-g0mmwb-MuiButtonBase-root-MuiTab-root.Mui-selected:hover {
+  color: #647087 !important;
+}
+
+.MuiListItemText-root {
+  font-size: 20px !important;
+}

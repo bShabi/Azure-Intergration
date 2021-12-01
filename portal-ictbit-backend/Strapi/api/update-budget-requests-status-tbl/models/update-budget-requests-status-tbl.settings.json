@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "update_budget_requests_status_tbls",
+  "info": {
+    "name": "UpdateBudgetRequestsStatus_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "UpdateBudgetRequestsStatusName": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

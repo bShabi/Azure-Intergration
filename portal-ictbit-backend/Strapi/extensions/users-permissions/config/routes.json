@@ -1,0 +1,36 @@
+{
+  "routes": [
+    {
+      "method": "POST",
+      "path": "/auth/otp-confirmation",
+      "handler": "Auth.otpConfirmation",
+      "config": {
+        "policies": [
+          "plugins::users-permissions.ratelimit"
+        ],
+        "prefix": "",
+        "description": "Send  the  OTP to login  , we send OTP to your  Email ! ",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User"
+        }
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/auth/send-otp-to-phone",
+      "handler": "Auth.sendOtpToPhone",
+      "config": {
+        "policies": [
+          "plugins::users-permissions.ratelimit"
+        ],
+        "prefix": "",
+        "description": "Send  the  OTP to login  , we send OTP to your  Email ! ",
+        "tag": {
+          "plugin": "users-permissions",
+          "name": "User"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "update_budget_requests_tbls",
+  "info": {
+    "name": "UpdateBudgetRequests_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SubscriptionName": {
+      "type": "string"
+    },
+    "CurrentBudget": {
+      "type": "integer"
+    },
+    "NewBudget": {
+      "type": "integer"
+    },
+    "NewBudgetNotes": {
+      "type": "richtext"
+    },
+    "lastUpdated": {
+      "type": "date"
+    },
+    "requests_tbl": {
+      "via": "update_budget_requests_tbls",
+      "model": "requests-tbl"
+    }
+  }
+}

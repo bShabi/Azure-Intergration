@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/email-q-tbls",
+      "handler": "email-q-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-q-tbls/count",
+      "handler": "email-q-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/email-q-tbls/:id",
+      "handler": "email-q-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/email-q-tbls",
+      "handler": "email-q-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/email-q-tbls/:id",
+      "handler": "email-q-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/email-q-tbls/:id",
+      "handler": "email-q-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

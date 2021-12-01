@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cloud-permission-tbls",
+      "handler": "cloud-permission-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-permission-tbls/count",
+      "handler": "cloud-permission-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-permission-tbls/:id",
+      "handler": "cloud-permission-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cloud-permission-tbls",
+      "handler": "cloud-permission-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cloud-permission-tbls/:id",
+      "handler": "cloud-permission-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cloud-permission-tbls/:id",
+      "handler": "cloud-permission-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

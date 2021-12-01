@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "level_portal_permission_tbls",
+  "info": {
+    "name": "Level_Portal_Permission_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "LevelPortalPermissionName": {
+      "type": "string",
+      "unique": true
+    },
+    "LevelPortalPermissionID": {
+      "unique": true,
+      "type": "integer"
+    }
+  }
+}

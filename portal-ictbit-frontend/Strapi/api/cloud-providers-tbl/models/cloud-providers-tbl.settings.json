@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cloud_providers_tbls",
+  "info": {
+    "name": "CloudProviders_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Cloud": {
+      "type": "string",
+      "unique": true
+    },
+    "cloud_permission_tbl": {
+      "via": "CloudProviderID",
+      "model": "cloud-permission-tbl"
+    },
+    "cloud_environment_area_tbl": {
+      "via": "cloud_providers_tbls",
+      "model": "cloud-environment-area-tbl"
+    }
+  }
+}

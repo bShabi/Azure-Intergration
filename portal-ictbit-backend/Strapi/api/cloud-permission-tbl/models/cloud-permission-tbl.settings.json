@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cloud_permission_tbls",
+  "info": {
+    "name": "CloudPermission_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CloudPermissionName": {
+      "type": "string",
+      "unique": true
+    },
+    "CloudProviderID": {
+      "via": "cloud_permission_tbl",
+      "collection": "cloud-providers-tbl"
+    }
+  }
+}

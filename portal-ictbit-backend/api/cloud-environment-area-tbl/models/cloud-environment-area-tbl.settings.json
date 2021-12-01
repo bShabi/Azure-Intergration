@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cloud_environment_area_tbls",
+  "info": {
+    "name": "CloudEnvironmentArea_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CloudEnvironmentAreaName": {
+      "type": "string",
+      "unique": true
+    },
+    "cloud_providers_tbls": {
+      "collection": "cloud-providers-tbl",
+      "via": "cloud_environment_area_tbl"
+    }
+  }
+}

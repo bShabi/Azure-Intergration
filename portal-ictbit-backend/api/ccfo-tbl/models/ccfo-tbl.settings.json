@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ccfo_tbls",
+  "info": {
+    "name": "CCFO_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "CCFOName": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "CCFOCellular": {
+      "type": "biginteger",
+      "required": true,
+      "default": "05"
+    },
+    "CCFOEmail": {
+      "type": "email",
+      "required": true
+    },
+    "DateCreateCCFO": {
+      "type": "datetime",
+      "required": false
+    },
+    "requests_tbl": {
+      "via": "CCFOID",
+      "model": "requests-tbl"
+    }
+  }
+}

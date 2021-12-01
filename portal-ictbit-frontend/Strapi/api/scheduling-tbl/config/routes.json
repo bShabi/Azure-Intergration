@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/scheduling-tbls",
+      "handler": "scheduling-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduling-tbls/count",
+      "handler": "scheduling-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/scheduling-tbls/:id",
+      "handler": "scheduling-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/scheduling-tbls",
+      "handler": "scheduling-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/scheduling-tbls/:id",
+      "handler": "scheduling-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/scheduling-tbls/:id",
+      "handler": "scheduling-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

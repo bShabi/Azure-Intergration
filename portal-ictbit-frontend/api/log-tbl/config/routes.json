@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/log-tbls",
+      "handler": "log-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/log-tbls/count",
+      "handler": "log-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/log-tbls/:id",
+      "handler": "log-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/log-tbls",
+      "handler": "log-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/log-tbls/:id",
+      "handler": "log-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/log-tbls/:id",
+      "handler": "log-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

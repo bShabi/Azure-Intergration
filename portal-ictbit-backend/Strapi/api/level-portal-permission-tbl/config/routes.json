@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/level-portal-permission-tbls",
+      "handler": "level-portal-permission-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/level-portal-permission-tbls/count",
+      "handler": "level-portal-permission-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/level-portal-permission-tbls/:id",
+      "handler": "level-portal-permission-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/level-portal-permission-tbls",
+      "handler": "level-portal-permission-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/level-portal-permission-tbls/:id",
+      "handler": "level-portal-permission-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/level-portal-permission-tbls/:id",
+      "handler": "level-portal-permission-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

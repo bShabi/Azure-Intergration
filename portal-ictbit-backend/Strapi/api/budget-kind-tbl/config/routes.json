@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/budget-kind-tbls",
+      "handler": "budget-kind-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-kind-tbls/count",
+      "handler": "budget-kind-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/budget-kind-tbls/:id",
+      "handler": "budget-kind-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/budget-kind-tbls",
+      "handler": "budget-kind-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/budget-kind-tbls/:id",
+      "handler": "budget-kind-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/budget-kind-tbls/:id",
+      "handler": "budget-kind-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "organization_tbls",
+  "info": {
+    "name": "Organization_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "OrganizationName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "OrganizationEmail": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "portal_permission_tbls",
+  "info": {
+    "name": "Portal_Permission_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "PortalPermissionName": {
+      "type": "string",
+      "maxLength": 32,
+      "unique": true
+    },
+    "LevelPermissionID": {
+      "type": "biginteger"
+    }
+  }
+}

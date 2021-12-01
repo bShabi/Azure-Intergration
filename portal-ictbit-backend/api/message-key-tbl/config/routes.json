@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/message-key-tbls",
+      "handler": "message-key-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/message-key-tbls/count",
+      "handler": "message-key-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/message-key-tbls/:id",
+      "handler": "message-key-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/message-key-tbls",
+      "handler": "message-key-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/message-key-tbls/:id",
+      "handler": "message-key-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/message-key-tbls/:id",
+      "handler": "message-key-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

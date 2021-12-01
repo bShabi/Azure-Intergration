@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cloud-providers-tbls",
+      "handler": "cloud-providers-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-providers-tbls/count",
+      "handler": "cloud-providers-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cloud-providers-tbls/:id",
+      "handler": "cloud-providers-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cloud-providers-tbls",
+      "handler": "cloud-providers-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cloud-providers-tbls/:id",
+      "handler": "cloud-providers-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cloud-providers-tbls/:id",
+      "handler": "cloud-providers-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

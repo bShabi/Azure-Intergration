@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "message_key_tbls",
+  "info": {
+    "name": "MessageKey_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "MessageName": {
+      "type": "string",
+      "required": true
+    },
+    "MessageText": {
+      "type": "string",
+      "required": true
+    },
+    "MessageKey": {
+      "type": "integer",
+      "unique": true,
+      "required": true
+    }
+  }
+}

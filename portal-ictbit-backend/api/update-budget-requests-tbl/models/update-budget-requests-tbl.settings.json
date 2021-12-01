@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "update_budget_requests_tbls",
+  "info": {
+    "name": "UpdateBudgetRequests_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SubscriptionName": {
+      "type": "string",
+      "unique": false
+    },
+    "CurrentBudget": {
+      "type": "integer"
+    },
+    "NewBudget": {
+      "type": "integer"
+    },
+    "NewBudgetNotes": {
+      "type": "richtext"
+    },
+    "lastUpdated": {
+      "type": "date"
+    },
+    "members_tbl": {
+      "via": "update_budget_requests_tbls",
+      "model": "members-tbl"
+    },
+    "requests_tbl": {
+      "via": "update_budget_requests_tbls",
+      "model": "requests-tbl"
+    },
+    "requests_status_tbl": {
+      "model": "update-budget-requests-status-tbl"
+    },
+    "SubscriptionName_deniedNote": {
+      "type": "string"
+    },
+    "CurrentBudget_deniedNote": {
+      "type": "string"
+    },
+    "NewBudget_deniedNote": {
+      "type": "string"
+    },
+    "NewBudgetNotes_deniedNote": {
+      "type": "string"
+    },
+    "general_deniedNote": {
+      "type": "string"
+    },
+    "DisplayNumber": {
+      "type": "string"
+    },
+    "isRegularRequest": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

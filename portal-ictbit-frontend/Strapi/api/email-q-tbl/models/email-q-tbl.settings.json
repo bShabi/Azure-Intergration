@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_q_tbls",
+  "info": {
+    "name": "EmailQ_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "EmailDateAdded": {
+      "type": "datetime"
+    },
+    "EmailFrom": {
+      "type": "string"
+    },
+    "EmailTo": {
+      "type": "string"
+    },
+    "EmaiSubject": {
+      "type": "string"
+    },
+    "EmailBody": {
+      "type": "richtext"
+    },
+    "isSendEmail": {
+      "type": "boolean"
+    }
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests_tbls",
+  "info": {
+    "name": "Requests_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "memberID": {
+      "via": "requests_tbls",
+      "model": "members-tbl"
+    },
+    "DateCreateRequest": {
+      "type": "datetime"
+    },
+    "LastDateUpdateRequest": {
+      "type": "datetime"
+    },
+    "CCFOID": {
+      "collection": "ccfo-tbl",
+      "via": "requests_tbl"
+    },
+    "DateCCFORequestNotes": {
+      "type": "datetime"
+    },
+    "LastDateLoginToCloudProvider": {
+      "type": "datetime"
+    },
+    "cloud_name": {
+      "model": "cloud-providers-tbl"
+    },
+    "ProjectNameinCloud": {
+      "type": "string",
+      "unique": true
+    },
+    "PermisionNameOfCloudProvider": {
+      "type": "string"
+    },
+    "cloud_environment_area_name": {
+      "model": "cloud-environment-area-tbl"
+    },
+    "scheduling": {
+      "model": "scheduling-tbl"
+    },
+    "ReasonOfUnUseofScheduling": {
+      "type": "richtext"
+    },
+    "BudgetOnDemand": {
+      "type": "decimal"
+    },
+    "BudgetReasonNotes": {
+      "type": "richtext"
+    },
+    "DateTimePredictionOfProject": {
+      "type": "string"
+    },
+    "cloud_permissiontbl": {
+      "model": "cloud-permission-tbl",
+      "via": "requests_tbls"
+    },
+    "requests_status_tbl": {
+      "model": "update-budget-requests-status-tbl"
+    },
+    "fullname": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "fullname_deniedNote": {
+      "type": "string"
+    },
+    "phone_deniedNote": {
+      "type": "string"
+    },
+    "title_deniedNote": {
+      "type": "string"
+    },
+    "ccfoFullName_deniedNote": {
+      "type": "string"
+    },
+    "ccfoEmail_deniedNote": {
+      "type": "string"
+    },
+    "ccfoPhone_deniedNote": {
+      "type": "string"
+    },
+    "nameInCloud_deniedNote": {
+      "type": "string"
+    },
+    "permission_deniedNote": {
+      "type": "string"
+    },
+    "providerCloud_deniedNote": {
+      "type": "string"
+    },
+    "environment_deniedNote": {
+      "type": "string"
+    },
+    "scheduling_deniedNote": {
+      "type": "string"
+    },
+    "reasonOfUnUseofScheduling_deniedNote": {
+      "type": "string"
+    },
+    "budget_deniedNote": {
+      "type": "string"
+    },
+    "file_deniedNote": {
+      "type": "string"
+    },
+    "limitProject_deniedNote": {
+      "type": "string"
+    },
+    "commandOfBudget_deniedNote": {
+      "type": "string"
+    },
+    "general_deniedNote": {
+      "type": "string"
+    },
+    "update_budget_requests_tbls": {
+      "via": "requests_tbl",
+      "collection": "update-budget-requests-tbl"
+    },
+    "isBudgetRange": {
+      "type": "boolean",
+      "default": true
+    },
+    "budget_kind_tbl": {
+      "model": "budget-kind-tbl",
+      "via": "requests_tbls"
+    },
+    "DisplayNumber": {
+      "type": "string",
+      "unique": true
+    },
+    "isRegularRequest": {
+      "type": "boolean",
+      "default": true
+    },
+    "emailToSend": {
+      "type": "email"
+    },
+    "summaryProject": {
+      "type": "richtext"
+    }
+  }
+}

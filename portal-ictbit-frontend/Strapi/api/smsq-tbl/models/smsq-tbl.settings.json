@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smsq_tbls",
+  "info": {
+    "name": "SMSQ_TBL"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SMSDateAdded": {
+      "type": "datetime",
+      "required": true
+    },
+    "ReceiveMemberID": {
+      "type": "string"
+    },
+    "SendMemberID": {
+      "type": "string"
+    },
+    "SMSMessage": {
+      "type": "string"
+    },
+    "isSendSMS": {
+      "type": "boolean"
+    }
+  }
+}

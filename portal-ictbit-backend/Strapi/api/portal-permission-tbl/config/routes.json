@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/portal-permission-tbls",
+      "handler": "portal-permission-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-permission-tbls/count",
+      "handler": "portal-permission-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/portal-permission-tbls/:id",
+      "handler": "portal-permission-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/portal-permission-tbls",
+      "handler": "portal-permission-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/portal-permission-tbls/:id",
+      "handler": "portal-permission-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/portal-permission-tbls/:id",
+      "handler": "portal-permission-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/smsq-tbls",
+      "handler": "smsq-tbl.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/smsq-tbls/count",
+      "handler": "smsq-tbl.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/smsq-tbls/:id",
+      "handler": "smsq-tbl.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/smsq-tbls",
+      "handler": "smsq-tbl.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/smsq-tbls/:id",
+      "handler": "smsq-tbl.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/smsq-tbls/:id",
+      "handler": "smsq-tbl.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

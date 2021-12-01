@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "settings_tbls",
+  "info": {
+    "name": "settings-tbls",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isEmailRequests": {
+      "type": "boolean"
+    },
+    "isSmsRequests": {
+      "type": "boolean"
+    },
+    "const_Budget": {
+      "type": "integer"
+    },
+    "members_tbls": {
+      "via": "settings_tbl",
+      "collection": "members-tbl"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+az account alias create --name "sampleAlias" --billing-scope "/providers/Microsoft.Billing/billingAccounts/6604010/departments/37223" --display-name "Dev Team Subscription" --workload "Production"
+
+
+//create
+az account alias create --name "test" --billing-scope "/providers/Microsoft.Billing/billingAccounts/6604010/departments/37223" --display-name "test2" --workload "Production"
+
+/providers/Microsoft.Billing/billingAccounts/6604010/departments/37223
+
+
+
+133403
+740
+17
+עמותת אחוות אחים
+
+207812637

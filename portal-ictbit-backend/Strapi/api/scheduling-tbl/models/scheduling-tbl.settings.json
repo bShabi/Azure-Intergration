@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "scheduling_tbls",
+  "info": {
+    "name": "Scheduling_TBL",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SchedulingOption": {
+      "type": "string"
+    }
+  }
+}
